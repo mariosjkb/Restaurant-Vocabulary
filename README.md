@@ -13,8 +13,8 @@ The algorythm was developed for the purposes of an undergraduate class in in Com
 + [Yelp](https://www.yelp.com/dataset)
 
 ## Description
-The algorythm gets the text reviews for a sample of restaurants found in the Yelp dataset. Then keep only the restaurants with average review score >=4.5 and <=2 in order to polarize our data and guarantee that the reviews left in our dataset are strongly positive and negative.
-We vectorize the reviews using Tf-Idf vectorizer and run k-means with n=2. Then we check the centroids of the 2 clusters and the words that are not positive or negative adjectives become stop-words for the Tf-Idf vectorizer. We repeating this process until the 10 most important words for clustering in both centroids contain plenty positive/negative adjectives.
+The algorythm gets the text reviews for a sample of restaurants found in the Yelp dataset. Then keep only the restaurants with average review score >=4.5 and <=2 in order to polarize our data and guarantee that the reviews left in our dataset are strongly positive and negative.<br>
+We vectorize the reviews using Tf-Idf vectorizer and run k-means with n=2. Then we check the centroids of the 2 clusters and the words that are not positive or negative adjectives become stop-words for the Tf-Idf vectorizer. We repeating this process until the 10 most important words for clustering in both centroids contain plenty positive/negative adjectives.<br>
 Then we use a Skipgram embedding for the top words we found previously in order to find phrases with these words and then return the result.
 
 ## Contributor
